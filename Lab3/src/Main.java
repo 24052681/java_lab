@@ -15,6 +15,7 @@ class Plastic2D {
         double area = length * width;
         double cost = area * 40;
         System.out.println("Cost of 2D Sheet = Rs " + cost);
+        hello
     }
 }
 
