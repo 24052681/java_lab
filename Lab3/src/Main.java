@@ -1,24 +1,46 @@
-class Main{
+import java.util.Scanner;
+
+
+class Plastic2D {
+    double length, width;
+
+    void getData() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter length and width: ");
+        length = sc.nextDouble();
+        width = sc.nextDouble();
+    }
+
+    void cost2D() {
+        double area = length * width;
+        double cost = area * 40;
+        System.out.println("Cost of 2D Sheet = Rs " + cost);
+    }
+}
+
+
+class Plastic3D extends Plastic2D {
+    double height;
+
+    void getData3D() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter height: ");
+        height = sc.nextDouble();
+    }
+
+    void cost3D() {
+        double volume = length * width * height;
+        double cost = volume * 60;
+        System.out.println("Cost of 3D Box = Rs " + cost);
+    }
+}
+
+public class Main {
     public static void main(String[] args) {
-
-        int even = 0;
-        int odd = 0;
-
-        if (args.length != 10) {
-            System.out.println("Please enter exactly 10 numbers.");
-            return;
-        }
-
-        for (int i = 0; i < 10; i++) {
-            int num = Integer.parseInt(args[i]);
-
-            if (num % 2 == 0)
-                even++;
-            else
-                odd++;
-        }
-
-        System.out.println("Number of even numbers = " + even);
-        System.out.println("Number of odd numbers = " + odd);
+        Plastic3D p = new Plastic3D();
+        p.getData();
+        p.getData3D();
+        p.cost2D();
+        p.cost3D();
     }
 }
