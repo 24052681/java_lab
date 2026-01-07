@@ -10,7 +10,7 @@ class ObjectCount {
     }
 }
 
-public class classCounter_2 {
+public class ass2 {
     public static void main(String[] args) {
         ObjectCount o1 = new ObjectCount();
         ObjectCount o2 = new ObjectCount();

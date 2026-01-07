@@ -8,7 +8,7 @@ class Box {
     }
 }
 
-public class volumeBox_3 {
+public class ass3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Box b = new Box();
