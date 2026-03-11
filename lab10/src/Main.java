@@ -1,9 +1,10 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
         JFrame f = new JFrame("Registration Form");
-        f.setSize(500,400);
+        f.setSize(500,600);
         f.setLayout(null);
 
         JLabel l1 = new JLabel("Name:");
@@ -56,7 +57,7 @@ public class Main {
 
         ImageIcon img = new ImageIcon("images.png");
         JLabel imgLabel = new JLabel(img);
-        imgLabel.setBounds(0,0,500,400);
+        imgLabel.setBounds(-45,150,500,555);
         f.add(imgLabel);
 
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
